@@ -5,6 +5,8 @@ class SchoolsController < ApplicationController
 
   def show
     @school = School.find(params[:id])
-      @this_schools_students = Student.all.select{ |student| student.school_id == @school.id}
+    @this_schools_students = Student.all.select{ |student| student.school_id == @school.id}
   end
+
+  
 end
