@@ -1,2 +1,8 @@
-<h1>School#show</h1>
+<h1><%=@school.name%></h1>
 <p>Find me in app/views/school/show.html.erb</p>
+<br>
+<ul>
+    <%@this_schools_students.each do |s| %>
+       <li><%=link_to s.name, student_path(s)%></li>
+    <% end %>
+</ul>

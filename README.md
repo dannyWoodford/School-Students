@@ -10,13 +10,13 @@
 
 # Deliverables:
 
-- A School has a name and address
+[x] A School has a name and address
 
-- A School has many Students
+[x ]- A School has many Students
 
 - A Student has a name, age, and school
 
-- A Student belongs to a School
+[x] - A Student belongs to a School
 
 - The School index page should list all schools
 

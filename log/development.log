@@ -169,3 +169,640 @@ Processing by SchoolsController#index as HTML
 Completed 200 OK in 325ms (Views: 310.4ms | ActiveRecord: 1.1ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSchool Create (0.5ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Flatiron School"], ["address", "11 Broadway"], ["created_at", "2019-09-20 14:59:01.894446"], ["updated_at", "2019-09-20 14:59:01.894446"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSchool Create (0.4ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "NYU"], ["address", "New York, NY 10003"], ["created_at", "2019-09-20 14:59:01.900922"], ["updated_at", "2019-09-20 14:59:01.900922"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSchool Create (0.3ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "John Jay"], ["address", "524 W 59th St, New York, NY 10019"], ["created_at", "2019-09-20 14:59:01.908857"], ["updated_at", "2019-09-20 14:59:01.908857"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mSchool Create (0.5ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "City College"], ["address", "160 Convent Ave, New York, NY 10031"], ["created_at", "2019-09-20 14:59:01.915071"], ["updated_at", "2019-09-20 14:59:01.915071"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSchool Create (0.3ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Columbia University"], ["address", "116th St & Broadway, New York, NY 10027"], ["created_at", "2019-09-20 14:59:01.921277"], ["updated_at", "2019-09-20 14:59:01.921277"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+Started GET "/" for ::1 at 2019-09-20 11:11:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 39ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2019-09-20 11:11:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/schools" for ::1 at 2019-09-20 11:11:37 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.3ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  ↳ app/views/schools/index.html.erb:4
+  Rendered schools/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 533ms (Views: 509.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/schools/1" for ::1 at 2019-09-20 11:11:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/schools/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.9ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (1.5ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSchool Create (0.3ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Flatiron School"], ["address", "11 Broadway"], ["created_at", "2019-09-20 15:15:37.282348"], ["updated_at", "2019-09-20 15:15:37.282348"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSchool Create (0.3ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "NYU"], ["address", "New York, NY 10003"], ["created_at", "2019-09-20 15:15:37.287345"], ["updated_at", "2019-09-20 15:15:37.287345"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSchool Create (0.5ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "John Jay"], ["address", "524 W 59th St, New York, NY 10019"], ["created_at", "2019-09-20 15:15:37.293078"], ["updated_at", "2019-09-20 15:15:37.293078"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mSchool Create (0.5ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "City College"], ["address", "160 Convent Ave, New York, NY 10031"], ["created_at", "2019-09-20 15:15:37.299671"], ["updated_at", "2019-09-20 15:15:37.299671"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSchool Create (0.5ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Columbia University"], ["address", "116th St & Broadway, New York, NY 10027"], ["created_at", "2019-09-20 15:15:37.306586"], ["updated_at", "2019-09-20 15:15:37.306586"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+Started GET "/schools" for ::1 at 2019-09-20 11:20:33 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.7ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  ↳ app/views/schools/index.html.erb:4
+  Rendered schools/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 377ms (Views: 367.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/schools/11" for ::1 at 2019-09-20 11:20:35 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routs" for ::1 at 2019-09-20 11:21:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/rails/info/routs"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2019-09-20 11:21:11 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [7 times] (2.5ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 20ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddSchoolIdToStudents (20190920153120)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "students" ADD "school_id" integer[0m
+  ↳ db/migrate/20190920153120_add_school_id_to_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190920153120"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:8
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSchool Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSchool Create (0.4ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Flatiron School"], ["address", "11 Broadway"], ["created_at", "2019-09-20 15:38:06.940888"], ["updated_at", "2019-09-20 15:38:06.940888"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSchool Create (0.3ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "NYU"], ["address", "New York, NY 10003"], ["created_at", "2019-09-20 15:38:06.946752"], ["updated_at", "2019-09-20 15:38:06.946752"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSchool Create (0.4ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "John Jay"], ["address", "524 W 59th St, New York, NY 10019"], ["created_at", "2019-09-20 15:38:06.952010"], ["updated_at", "2019-09-20 15:38:06.952010"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mSchool Create (0.5ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "City College"], ["address", "160 Convent Ave, New York, NY 10031"], ["created_at", "2019-09-20 15:38:06.957307"], ["updated_at", "2019-09-20 15:38:06.957307"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSchool Create (0.4ms)[0m  [1m[32mINSERT INTO "schools" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Columbia University"], ["address", "116th St & Broadway, New York, NY 10027"], ["created_at", "2019-09-20 15:38:06.962501"], ["updated_at", "2019-09-20 15:38:06.962501"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "created_at", "updated_at", "school_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "pongo"], ["age", 12], ["created_at", "2019-09-20 15:38:07.017629"], ["updated_at", "2019-09-20 15:38:07.017629"], ["school_id", 16]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mSchool Load (0.3ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "created_at", "updated_at", "school_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Greg"], ["age", 43], ["created_at", "2019-09-20 15:38:07.064117"], ["updated_at", "2019-09-20 15:38:07.064117"], ["school_id", 17]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mSchool Load (0.1ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "created_at", "updated_at", "school_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sally"], ["age", 27], ["created_at", "2019-09-20 15:38:07.071255"], ["updated_at", "2019-09-20 15:38:07.071255"], ["school_id", 18]]
+  ↳ db/seeds.rb:18
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mSchool Load (0.1ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "created_at", "updated_at", "school_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Art"], ["age", 78], ["created_at", "2019-09-20 15:38:07.077208"], ["updated_at", "2019-09-20 15:38:07.077208"], ["school_id", 16]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSchool Load (0.1ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "created_at", "updated_at", "school_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Beth"], ["age", 12], ["created_at", "2019-09-20 15:38:07.083098"], ["updated_at", "2019-09-20 15:38:07.083098"], ["school_id", 16]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mSchool Load (0.1ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "created_at", "updated_at", "school_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Frank"], ["age", 16], ["created_at", "2019-09-20 15:38:07.089075"], ["updated_at", "2019-09-20 15:38:07.089075"], ["school_id", 20]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+Started GET "/students" for ::1 at 2019-09-20 11:38:57 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/students/1" for ::1 at 2019-09-20 11:39:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/students/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/schools/1" for ::1 at 2019-09-20 11:39:08 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 405ms (Views: 403.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/1" for ::1 at 2019-09-20 11:41:05 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:7
+Completed 404 Not Found in 6ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find School with 'id'=1):
+  
+app/controllers/schools_controller.rb:7:in `show'
+Started GET "/schools/16" for ::1 at 2019-09-20 11:41:34 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:7
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schools/16" for ::1 at 2019-09-20 11:49:08 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSchool Load (0.1ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:7
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/schools_controller.rb:8
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 15.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/schools/16" for ::1 at 2019-09-20 11:49:58 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:7
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/schools_controller.rb:8
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/schools/16" for ::1 at 2019-09-20 11:51:08 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:7
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/schools_controller.rb:8
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/schools/16" for ::1 at 2019-09-20 11:51:59 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:7
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/schools_controller.rb:8
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (123.3ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `student_path' for #<#<Class:0x00007fdf9aaf7590>:0x00007fdf9a334858>):
+    3: <br>
+    4: <ul>
+    5:     <%@this_schools_students.each do |s| %>
+    6:        <li><%=link_to s.name, student_path(s)%></li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/schools/show.html.erb:6:in `block in _app_views_schools_show_html_erb__3698270317877193658_70299170744420'
+app/views/schools/show.html.erb:5:in `each'
+app/views/schools/show.html.erb:5:in `_app_views_schools_show_html_erb__3698270317877193658_70299170744420'
+Started GET "/schools/16" for ::1 at 2019-09-20 11:54:23 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSchool Load (0.1ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:7
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/schools_controller.rb:8
+  Rendering schools/show.html.erb within layouts/application
+  Rendered schools/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 17.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/student/1" for ::1 at 2019-09-20 11:54:25 -0400
+  
+ActionController::RoutingError (uninitialized constant StudentController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
