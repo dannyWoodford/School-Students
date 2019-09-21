@@ -8,6 +8,11 @@ class StudentsController < ApplicationController
 
   end
 
+  def edit
+    # method to remove school_id from student
+    # redirect_to schools_path
+  end
+
   def destroy
     ham = Student.all.find_by(id: params[:id])
     school_id = ham.school.id
