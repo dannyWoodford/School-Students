@@ -2,14 +2,9 @@
 <p>Find me in app/views/school/show.html.erb</p>
 <br>
 <ul>
-    <%@this_schools_students.each do |s| %>
-       <li><%=link_to s.name, student_path(s)%></li>
+    <% @school.students.each do |s| %>
+       <li><%=link_to s.name, student_path(s)%> <%=link_to "drop student", destroy_path(s), method: :delete%></li>
     <% end %>
 </ul>
 
 
-<form action="" method="POST">
-        <input type=hidden method="PATCH">
-        <input type="text" name="Test" placeholder="student name"
-
-</form>
